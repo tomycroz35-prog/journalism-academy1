@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101c35" />
+  <meta name="description" content="Journalism Academy منصة تعليمية لطلاب الصحافة والإعلام." />
+  <title>Journalism Academy | أكاديمية الصحافة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="top-accent"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Journalism Academy الرئيسية">
+      <span class="brand-mark"><span></span><span></span><span></span></span>
+      <span class="brand-copy"><strong>Journalism <b>Academy</b></strong><small>اتعلم الصحافة.. واصنع تأثيرك</small></span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="التنقل الرئيسي">
+      <button class="nav-link active" data-page="home">الرئيسية</button>
+      <button class="nav-link" data-page="courses">المقررات</button>
+      <button class="nav-link" data-page="practice">التدريب والاختبارات</button>
+      <button class="nav-link" data-page="assistant">المساعد الذكي</button>
+      <button class="nav-link" data-page="about">عن الأكاديمية</button>
+      <button class="nav-link doctor-nav-link" id="doctorNavBtn" type="button">مساحة الدكاترة</button>
+    </nav>
+    <div class="header-actions">
+      <span class="user-chip hidden" id="userChip"></span>
+      <button class="btn btn-outline btn-small" id="loginBtn">تسجيل الدخول</button>
+      <button class="btn btn-primary btn-small" id="registerBtn">إنشاء حساب</button>
+      <button class="icon-btn mobile-menu" id="menuBtn" aria-label="فتح القائمة">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="page active" id="page-home">
+      <div class="hero-shell">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> منصة تعليمية لطلاب الإعلام والصحافة</div>
+            <h1>خليك صحفي<br><span>يعرف يسأل</span> ويعرف يوصل</h1>
+            <p class="hero-lead">اتعلم أساسيات وفنون الصحافة خطوة بخطوة، اختار فرقتك ومقرراتك، طبّق اللي اتعلمته في تدريبات واختبارات، وطور مهاراتك مع أدوات مساعدة ذكية.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary btn-large" data-go="courses">اكتشف المقررات <span>←</span></button>
+              <button class="btn btn-glass btn-large" id="heroLogin">ابدأ رحلتك</button>
+            </div>
+            <div class="hero-proof"><div class="avatar-stack"><span>ص</span><span>إ</span><span>م</span><span>+</span></div><span>تعلم منظم لطلاب الفرق الأربعة</span></div>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+            <div class="visual-card main-visual-card">
+              <div class="visual-card-top"><span class="live-dot"></span><span>مساحة التعلم</span><span class="dots">•••</span></div>
+              <div class="newspaper-art"><div class="paper-kicker">THE STUDENT JOURNAL</div><div class="paper-rule"></div><div class="paper-headline">الحقيقة تبدأ<br>بسؤال ذكي</div><div class="paper-lines"><i></i><i></i><i></i><i></i></div><div class="paper-photo"><span>PRESS</span></div><div class="paper-lines short"><i></i><i></i></div></div>
+              <div class="visual-footer"><span class="mini-icon">✎</span><div><strong>مهارات التحرير الصحفي</strong><small>درس تطبيقي · 12 دقيقة</small></div><span class="play-icon">▶</span></div>
+            </div>
+            <div class="floating-note note-top"><span class="note-icon">✦</span><div><strong>تعلّم وطبّق</strong><small>مش مجرد حفظ</small></div></div>
+            <div class="floating-note note-bottom"><div class="progress-ring"><span>85%</span></div><div><strong>تقدمك الدراسي</strong><small>خطوة كل يوم</small></div></div>
+            <div class="hero-stamp">JA<span>●</span></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="stats-strip wrap">
+        <div class="stat-item"><strong>04</strong><span>فرق دراسية</span></div><div class="stat-item"><strong>16+</strong><span>مقرر أساسي</span></div><div class="stat-item"><strong>50+</strong><span>درس وتطبيق</span></div><div class="stat-item"><strong>24/7</strong><span>تعلم في أي وقت</span></div>
+      </section>
+
+      <section class="section wrap">
+        <div class="section-heading"><div><span class="section-kicker">ابدأ من مكانك</span><h2>اختار فرقتك الدراسية</h2><p>كل سنة ليها مقرراتها ومهاراتها، والمحتوى متقسم بشكل يساعدك تتقدم بالتدريج.</p></div><button class="text-link" data-go="courses">عرض كل المقررات <span>←</span></button></div>
+        <div class="year-grid" id="homeYearGrid"></div>
+      </section>
+
+      <section class="feature-band">
+        <div class="wrap feature-layout"><div><span class="section-kicker light">من النظري للتطبيق</span><h2>مش بس هتقرأ عن الصحافة<br>هتتدرب عليها كمان</h2><p>اختبارات قصيرة، أسئلة للمراجعة، سيناريوهات تحرير، ومساحة مساعدة تفهمك المفاهيم الصعبة.</p><button class="btn btn-light" data-go="practice">ابدأ التدريب <span>←</span></button></div><div class="feature-cards"><div class="feature-mini"><span class="feature-symbol">✍</span><strong>تدريب تحريري</strong><small>اكتب وراجع وطوّر أسلوبك</small></div><div class="feature-mini offset"><span class="feature-symbol">◎</span><strong>اختبر معلوماتك</strong><small>أسئلة بإجابات وشرح</small></div><div class="feature-mini"><span class="feature-symbol">✦</span><strong>مساعد تعليمي</strong><small>اسأل عن المفاهيم الصحفية</small></div></div></div>
+      </section>
+
+      <section class="section wrap"><div class="section-heading"><div><span class="section-kicker">تعلم على إيد متخصصين</span><h2>مساحة للدكاترة كمان</h2><p>الدكتور يقدر ينشئ مقرر جديد، يضيف وصف المنهج والدروس، وينظم المحتوى حسب الفرقة الدراسية.</p></div><button class="btn btn-outline" id="doctorCta">دخول الدكاترة</button></div></section>
+    </section>
+
+    <!-- COURSES -->
+    <section class="page" id="page-courses">
+      <div class="page-hero wrap"><div><span class="section-kicker">المكتبة التعليمية</span><h1>المقررات <em>والدروس</em></h1><p>اختار الفرقة، واستكشف المقررات والدروس المتاحة ليك.</p></div><div class="page-hero-icon">▤</div></div>
+      <div class="wrap content-section">
+        <div class="filter-row"><div class="year-tabs" id="courseYearTabs"></div><div class="search-wrap"><span>⌕</span><input id="courseSearch" type="search" placeholder="ابحث عن مقرر..." aria-label="ابحث عن مقرر"></div></div>
+        <div class="course-count" id="courseCount"></div><div class="course-grid" id="courseGrid"></div>
+      </div>
+    </section>
+
+    <!-- COURSE DETAIL -->
+    <section class="page" id="page-course-detail">
+      <div class="wrap content-section"><button class="back-link" data-go="courses">→ الرجوع للمقررات</button><div id="courseDetail"></div></div>
+    </section>
+
+    <!-- PRACTICE -->
+    <section class="page" id="page-practice">
+      <div class="page-hero wrap"><div><span class="section-kicker">اتعلم بالممارسة</span><h1>التدريب <em>والاختبارات</em></h1><p>اختبر فهمك للمفاهيم الصحفية، وشوف نتيجتك مع شرح الإجابات.</p></div><div class="page-hero-icon">✎</div></div>
+      <div class="wrap content-section practice-layout"><aside class="practice-sidebar"><h3>اختار نوع التدريب</h3><button class="practice-type active" data-practice="quiz"><span>☷</span><div><strong>اختبار معلومات</strong><small>اختيار من متعدد</small></div></button><button class="practice-type" data-practice="writing"><span>✍</span><div><strong>تحدي تحريري</strong><small>تدرب على كتابة الخبر</small></div></button><div class="tip-card"><span>✦ نصيحة</span><p>اقرأ السؤال كويس، وحاول تجاوب من فهمك قبل ما تشوف التفسير.</p></div></aside><div class="practice-main" id="practiceMain"></div></div>
+    </section>
+
+    <!-- AI ASSISTANT -->
+    <section class="page" id="page-assistant">
+      <div class="page-hero wrap"><div><span class="section-kicker">مساعدك في المذاكرة</span><h1>المساعد <em>التعليمي</em></h1><p>اسأل عن مصطلح صحفي أو اطلب شرح مبسط أو فكرة لتدريب عملي.</p></div><div class="page-hero-icon">✦</div></div>
+      <div class="wrap content-section assistant-wrap"><div class="assistant-card"><div class="assistant-head"><div class="assistant-avatar">JA</div><div><strong>مساعد Journalism Academy</strong><small><span class="live-dot"></span> مساعد تجريبي للمذاكرة</small></div><span class="assistant-label">تعلم تفاعلي</span></div><div class="chat-area" id="chatArea"><div class="chat-message bot"><span class="chat-avatar">JA</span><div><p>أهلاً بيك! 👋 أنا مساعدك في مذاكرة الصحافة. اسألني عن الخبر الصحفي، أو الهرم المقلوب، أو المقابلة، أو أي مفهوم من أساسيات التحرير.</p><small>المساعد التجريبي</small></div></div><div class="suggestion-row"><button data-prompt="ما هي عناصر الخبر الصحفي؟">عناصر الخبر الصحفي</button><button data-prompt="اشرح الهرم المقلوب بمثال">الهرم المقلوب</button><button data-prompt="إزاي أعمل مقابلة صحفية؟">المقابلة الصحفية</button></div></div><form class="chat-form" id="chatForm"><input id="chatInput" type="text" placeholder="اكتب سؤالك هنا..." autocomplete="off" required><button class="send-btn" type="submit" aria-label="إرسال السؤال">➤</button></form><p class="assistant-disclaimer">تنبيه: دي نسخة تجريبية بإجابات إرشادية جاهزة، وليست متصلة حاليًا بنموذج ذكاء اصطناعي مباشر. يلزم ربط خدمة AI وخادم خلفي لتفعيل المحادثة الذكية الكاملة.</p></div><aside class="assistant-side"><div class="side-info"><span class="side-info-icon">✦</span><h3>تقدر تسأل عن إيه؟</h3><ul><li>شرح المصطلحات الصحفية</li><li>خطوات كتابة الخبر والتقرير</li><li>أفكار لتدريبات ومشروعات</li><li>مراجعة قواعد وأخلاقيات المهنة</li></ul></div><div class="side-info cream"><span class="side-info-icon">✓</span><h3>خلي بالك</h3><p>راجع المعلومات من كتاب المقرر ومصادرك الأكاديمية، واستخدم المساعد كأداة للفهم والتدريب مش بديل عن البحث والتوثيق.</p></div></aside></div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="page" id="page-dashboard">
+      <div class="page-hero wrap"><div><span class="section-kicker">مساحتك التعليمية</span><h1>أهلاً بيك <em id="dashboardName">في الأكاديمية</em></h1><p>تابع مقرراتك والدروس اللي اخترتها.</p></div><div class="page-hero-icon">⌂</div></div>
+      <div class="wrap content-section"><div class="dashboard-toolbar"><div><h2>فرقتك الدراسية</h2><p>تقدر تغير الفرقة من إعدادات ملفك.</p></div><select id="studentYearSelect" class="field-select"><option value="1">الفرقة الأولى صحافة</option><option value="2">الفرقة الثانية صحافة</option><option value="3">الفرقة الثالثة صحافة</option><option value="4">الفرقة الرابعة صحافة</option></select></div><div class="dashboard-stats" id="dashboardStats"></div><div class="section-heading compact"><div><h2>مقرراتي</h2><p>المقررات اللي اخترت تتابعها.</p></div><button class="text-link" data-go="courses">اختار مقرر جديد ←</button></div><div class="course-grid" id="myCoursesGrid"></div>
+        <section class="student-learning-tools">
+          <div class="section-heading compact"><div><h2>اختبارات مقرراتي</h2><p>حل الاختبارات اللي أضافها الدكاترة وشوف درجاتك.</p></div></div>
+          <div id="studentQuizzes" class="student-quiz-grid"></div>
+          <div class="section-heading compact"><div><h2>سجل درجاتي</h2><p>آخر النتائج اللي حصلت عليها في اختبارات المقررات.</p></div></div>
+          <div id="studentGrades" class="gradebook-list"></div>
+        </section></div>
+    </section>
+
+    <!-- DOCTOR DASHBOARD -->
+    <section class="page" id="page-doctor">
+      <div class="page-hero wrap"><div><span class="section-kicker">مساحة هيئة التدريس</span><h1>إدارة <em>المحتوى التعليمي</em></h1><p>أضف مقرراتك ودروسك، وحدد الفرقة اللي هتظهرلها المادة.</p></div><div class="page-hero-icon">＋</div></div>
+      <div class="wrap content-section doctor-portal-intro">
+        <div class="doctor-welcome"><div><strong>أهلاً بيك في لوحة تحكم الدكتور</strong><p>من هنا تقدر ترفع المحاضرات، وتنشر كويز لفرقة معينة، وتراجع درجات الطلاب.</p></div><span class="doctor-welcome-icon">✦</span></div>
+        <div class="doctor-quick-actions" aria-label="اختصارات لوحة الدكتور">
+          <button type="button" data-doctor-jump="pdfTools"><span>01</span><strong>رفع PDF</strong><small>إضافة محاضرة أو مذكرة</small></button>
+          <button type="button" data-doctor-jump="quizTools"><span>02</span><strong>إنشاء كويز</strong><small>اختيار الفرقة والأسئلة</small></button>
+          <button type="button" data-doctor-jump="gradeTools"><span>03</span><strong>متابعة النتائج</strong><small>درجات ومحاولات الطلاب</small></button>
+        </div>
+      </div>
+      <div class="wrap content-section doctor-layout" id="courseManagement"><div class="doctor-form-card"><div class="form-heading"><span class="form-icon">＋</span><div><h2>إضافة مقرر جديد</h2><p>املأ بيانات المقرر والدروس التابعة ليه.</p></div></div><form id="addCourseForm" class="stack-form"><label>اسم المقرر<input name="title" type="text" placeholder="مثال: التحرير الصحفي المتقدم" required maxlength="80"></label><div class="form-two"><label>الفرقة الدراسية<select name="year" required><option value="1">الفرقة الأولى صحافة</option><option value="2">الفرقة الثانية صحافة</option><option value="3">الفرقة الثالثة صحافة</option><option value="4">الفرقة الرابعة صحافة</option></select></label><label>تصنيف المقرر<select name="category"><option>مقرر أساسي</option><option>مقرر تخصصي</option><option>تدريب عملي</option><option>مقرر اختياري</option></select></label></div><label>وصف المقرر<textarea name="description" rows="3" placeholder="اكتب نبذة مختصرة عن محتوى المقرر وأهدافه..." required></textarea></label><label>الدروس (اكتب كل درس في سطر منفصل)<textarea name="lessons" rows="5" placeholder="مفهوم المقرر وأهدافه&#10;المفاهيم الأساسية&#10;تطبيق عملي" required></textarea><small class="field-hint">تقدر تضيف دروس أكتر بعدين بتعديل المقرر في النسخة المتصلة بقاعدة بيانات.</small></label><button class="btn btn-primary btn-block" type="submit">نشر المقرر على المنصة <span>←</span></button><p class="form-note" id="doctorFormMessage" role="status"></p></form></div><div class="doctor-list-card"><div class="list-card-heading"><div><h2>المقررات المضافة</h2><p>المقررات اللي أضفتها من حسابك الحالي.</p></div><span class="count-badge" id="doctorCourseCount">0</span></div><div id="doctorCoursesList" class="doctor-courses-list"></div></div></div>
+      <div class="wrap content-section doctor-tools-grid">
+        <section class="doctor-tool-card" id="pdfTools">
+          <div class="form-heading"><span class="form-icon">PDF</span><div><h2>رفع ملفات المحاضرات</h2><p>ارفع ملفات PDF واربطها بمقرر من مقرراتك.</p></div></div>
+          <form id="pdfUploadForm" class="stack-form">
+            <label>المقرر<select name="courseId" id="pdfCourseSelect" required></select></label>
+            <label>عنوان الملف<input name="title" type="text" maxlength="90" placeholder="مثال: المحاضرة الأولى - مدخل للصحافة" required></label>
+            <label>اختار ملف PDF<input name="pdfFile" type="file" accept="application/pdf,.pdf" required><small class="field-hint">الحد الأقصى 20 ميجابايت للملف الواحد.</small></label>
+            <button class="btn btn-primary btn-block" type="submit">رفع ملف المحاضرة ↑</button><p class="form-note" id="pdfUploadMessage" role="status"></p>
+          </form>
+          <div class="tool-list-heading"><strong>الملفات اللي رفعتها</strong><span class="count-badge" id="doctorFileCount">0</span></div><div id="doctorFilesList" class="doctor-courses-list"></div>
+        </section>
+        <section class="doctor-tool-card" id="quizTools">
+          <div class="form-heading"><span class="form-icon">☷</span><div><h2>إنشاء كويز جديد</h2><p>اكتب الأسئلة والاختيارات وحدد الإجابة الصحيحة.</p></div></div>
+          <form id="createQuizForm" class="stack-form">
+            <label>الفرقة المستهدفة<select name="year" id="quizTargetYear" required><option value="1">الفرقة الأولى صحافة</option><option value="2">الفرقة الثانية صحافة</option><option value="3">الفرقة الثالثة صحافة</option><option value="4">الفرقة الرابعة صحافة</option></select><small class="field-hint">الاختبار هيظهر للطلاب المسجلين في الفرقة اللي تختارها.</small></label>
+            <label>المقرر المرتبط بالاختبار <select name="courseId" id="quizCourseSelect"><option value="">اختبار عام للفرقة بدون مقرر محدد</option></select><small class="field-hint">تقدر تخلي الكويز عامًا لكل الفرقة أو تربطه بمقرر من مقرراتك في نفس الفرقة.</small></label>
+            <label>اسم الكويز<input name="title" type="text" maxlength="90" placeholder="مثال: اختبار المحاضرة الأولى" required></label>
+            <label>تعليمات للطلاب<textarea name="description" rows="2" placeholder="عدد الأسئلة والوقت أو أي تعليمات للطلاب"></textarea></label>
+            <div class="quiz-editor-heading"><strong>أسئلة الكويز</strong><button class="btn btn-outline btn-small" id="addQuizQuestion" type="button">＋ إضافة سؤال</button></div>
+            <div id="quizQuestionsEditor" class="quiz-questions-editor"></div>
+            <button class="btn btn-primary btn-block" type="submit">نشر الكويز للطلاب</button><p class="form-note" id="quizCreateMessage" role="status"></p>
+          </form>
+          <div class="tool-list-heading"><strong>الكويزات المنشورة</strong><span class="count-badge" id="doctorQuizCount">0</span></div><div id="doctorQuizzesList" class="doctor-courses-list"></div>
+        </section>
+        <section class="doctor-tool-card doctor-gradebook-card" id="gradeTools">
+          <div class="list-card-heading"><div><h2>متابعة درجات الطلاب</h2><p>كل محاولة بتظهر باسم الطالب ودرجته ووقت التسليم.</p></div><div class="item-actions"><button class="btn btn-outline btn-small" id="refreshGradesBtn" type="button">تحديث النتائج ↻</button><button class="btn btn-outline btn-small" id="exportGradesBtn" type="button">تصدير الدرجات CSV</button></div></div>
+          <div id="doctorGradebook" class="gradebook-list"></div>
+          <p class="field-hint gradebook-note">في وضع Supabase تظهر درجات الطلاب من مختلف الأجهزة. استخدم زر تحديث النتائج لجلب أحدث المحاولات.</p>
+        </section>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="page" id="page-about"><div class="page-hero wrap"><div><span class="section-kicker">عن المنصة</span><h1>الصحافة معرفة <em>وممارسة</em></h1><p>Journalism Academy مساحة تعليمية بتنظم رحلة طالب الصحافة من أول المفاهيم لحد التطبيق العملي.</p></div><div class="page-hero-icon">◎</div></div><div class="wrap content-section about-grid"><div class="about-main"><h2>فكرتنا</h2><p>الأكاديمية بتجمع المحتوى الدراسي في مكان واحد، وبتقسمه حسب الفرق الدراسية عشان الطالب يوصل للمقرر المناسب بسهولة. كمان بتوفر مساحة للدكاترة يشاركوا المحتوى التدريسي، ويضيفوا الدروس والأنشطة.</p><h2>هدفنا</h2><p>نساعد طلاب الصحافة والإعلام على فهم المناهج، وتنمية مهارات الكتابة والتحرير والتغطية الصحفية، والتدرب على التفكير النقدي والتحقق من المعلومات.</p></div><div class="about-values"><div><span>01</span><strong>تعلم منظم</strong><small>مقررات حسب كل فرقة</small></div><div><span>02</span><strong>تطبيق مستمر</strong><small>أسئلة وتدريبات عملية</small></div><div><span>03</span><strong>مشاركة أكاديمية</strong><small>الدكاترة يضيفوا محتواهم</small></div></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark"><span></span><span></span><span></span></span><span class="brand-copy"><strong>Journalism <b>Academy</b></strong><small>اتعلم الصحافة.. واصنع تأثيرك</small></span></a><p>منصة تعليمية لطلاب الصحافة والإعلام</p><span>© <span id="yearNow"></span> Journalism Academy</span></div></footer>
+
+  <!-- AUTH MODAL -->
+  <div class="modal-backdrop hidden" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <div class="auth-modal"><button class="modal-close" id="closeAuth" aria-label="إغلاق">×</button><div class="auth-brand"><span class="brand-mark"><span></span><span></span><span></span></span><span>Journalism <b>Academy</b></span></div><div class="auth-intro"><h2 id="authTitle">نورت الأكاديمية</h2><p id="authSubtitle">سجل دخولك عشان توصل لمساحتك التعليمية.</p></div><div class="auth-tabs"><button class="auth-tab active" data-auth-mode="login">تسجيل الدخول</button><button class="auth-tab" data-auth-mode="register">إنشاء حساب جديد</button></div><form id="authForm" class="stack-form"><label>نوع الحساب<select id="authRole" name="role"><option value="student">طالب / طالبة</option><option value="doctor">دكتور / عضو هيئة تدريس</option></select></label><label>الاسم بالكامل<input name="name" id="authName" type="text" placeholder="اكتب اسمك" autocomplete="name"></label><label>البريد الإلكتروني<input name="email" type="email" placeholder="name@example.com" autocomplete="email" required></label><label>كلمة المرور<input name="password" type="password" placeholder="6 أحرف على الأقل" minlength="6" autocomplete="current-password" required></label><label id="authYearLabel">الفرقة الدراسية<select name="year" id="authYear"><option value="1">الفرقة الأولى صحافة</option><option value="2">الفرقة الثانية صحافة</option><option value="3">الفرقة الثالثة صحافة</option><option value="4">الفرقة الرابعة صحافة</option></select></label><button class="btn btn-primary btn-block" type="submit" id="authSubmit">دخول</button><p class="form-note" id="authMessage" role="status"></p></form><p class="security-note">نسخة تجريبية: الحسابات محفوظة على نفس المتصفح فقط. لا تستخدم كلمة مرور حقيقية أو بيانات شخصية حساسة.</p></div>
+  </div>
+  <div class="modal-backdrop hidden" id="studentQuizModal" role="dialog" aria-modal="true" aria-labelledby="studentQuizTitle">
+    <div class="auth-modal student-quiz-modal"><button class="modal-close" id="closeStudentQuiz" aria-label="إغلاق">×</button><div class="auth-intro"><h2 id="studentQuizTitle">اختبار المقرر</h2><p id="studentQuizDescription"></p></div><div id="studentQuizContent"></div></div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
